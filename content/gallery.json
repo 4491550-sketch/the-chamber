@@ -1,0 +1,29 @@
+{
+  "photos": [
+    {
+      "image": "/images/room-main.jpg",
+      "caption": "חדר הישיבות VIP: שולחן שיש ל-20 משתתפים",
+      "category": "חדר הישיבות"
+    },
+    {
+      "image": "/images/room-event.jpg",
+      "caption": "החדר בהעמדה לארוחת ערב עסקית",
+      "category": "אירועים וארוחות"
+    },
+    {
+      "image": "/images/room-wide.jpg",
+      "caption": "חדר הישיבות מזווית רחבה",
+      "category": "חדר הישיבות"
+    },
+    {
+      "image": "/images/room-dinner.jpg",
+      "caption": "פינת הקפה, המיני בר והשולחן ערוך לאירוח",
+      "category": "אירועים וארוחות"
+    },
+    {
+      "image": "/images/arch.jpg",
+      "caption": "שולחן השיש והנברשת בחדר הישיבות",
+      "category": "חדר הישיבות"
+    }
+  ]
+}

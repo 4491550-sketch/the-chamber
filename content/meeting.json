@@ -1,0 +1,7 @@
+{
+  "capacity": 20,
+  "base_price": 900,
+  "base_hours": 3,
+  "extra_hour": 100,
+  "cleaning": 150
+}
