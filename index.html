@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>הלשכה | משרדי בוטיק וחדר ישיבות VIP בירושלים</title>
+<meta name="description" content="הלשכה – 8 משרדים פרטיים מרוהטים לעמדה אחת עד 3 עמדות, עם זיהוי פנים ומיזוג אישי, וחדר ישיבות VIP לעד 20 איש. תובל 15, ירושלים. 053-2453345">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="הלשכה – The Chamber">
+<meta property="og:title" content="הלשכה | משרדי בוטיק וחדר ישיבות VIP בירושלים">
+<meta property="og:description" content="הלשכה – 8 משרדים פרטיים מרוהטים לעמדה אחת עד 3 עמדות, עם זיהוי פנים ומיזוג אישי, וחדר ישיבות VIP לעד 20 איש. תובל 15, ירושלים. 053-2453345">
+<meta name="theme-color" content="#0D1626">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Assistant:wght@300;400;600;700&family=Cormorant+Garamond:wght@500&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "הלשכה – The Chamber", "description": "מתחם משרדי בוטיק וחדר ישיבות VIP בירושלים", "address": {"@type": "PostalAddress", "streetAddress": "תובל 15", "addressLocality": "ירושלים", "addressCountry": "IL"}, "telephone": "+972-53-245-3345", "image": "images/room-main.jpg"}</script>
+<style>
+:root{
+  --ink:#0D1626; --ink-2:#131F33; --ink-3:#1A2842;
+  --gold:#C9A45C; --gold-soft:#E0C58F; --ivory:#F2ECDF; --stone:#BDB6A6;
+  --line:rgba(201,164,92,.28);
+  --serif:'Frank Ruhl Libre','David',Georgia,serif;
+  --sans:'Assistant','Arial Hebrew','Segoe UI',system-ui,sans-serif;
+  --latin:'Cormorant Garamond',Georgia,serif;
+  --wrap:1240px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#0D1626;--ink-2:#131F33;--ivory:#F2ECDF}}
+:root[data-theme="dark"]{--ink:#0D1626;--ink-2:#131F33;--ivory:#F2ECDF}
+:root[data-theme="light"]{--ink:#0D1626;--ink-2:#131F33;--ivory:#F2ECDF}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px);background:var(--ink)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--ivory);font-family:var(--sans);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--gold-soft)}
+a:hover{color:var(--ivory)}
+:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
+.wrap{width:min(var(--wrap),100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;line-height:1.12}
+p{margin:0}
+.skip{position:absolute;right:16px;top:-60px;background:var(--gold);color:var(--ink);padding:10px 16px;z-index:100}
+.skip:focus{top:calc(env(safe-area-inset-top,0px) + 12px)}
+
+/* draft marks */
+.draft-bar{background:#2A2413;color:var(--gold-soft);font-size:15px;border-bottom:1px solid var(--line)}
+.draft-bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:46px;padding:6px 0}
+.draft-bar button{background:transparent;border:1px solid var(--line);color:var(--gold-soft);font:inherit;font-size:14px;padding:6px 12px;cursor:pointer}
+.tbc{outline:1px dashed rgba(224,197,143,.75);outline-offset:4px}
+.hide-draft .tbc{outline:0}
+.hide-draft .draft-bar{display:none}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;font:700 17px/1 var(--sans);text-decoration:none;border:1px solid var(--gold);cursor:pointer;transition:background .2s,color .2s}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-soft);color:var(--ink)}
+.btn-line{background:transparent;color:var(--ivory)}
+.btn-line:hover{background:rgba(201,164,92,.12);color:var(--ivory)}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(13,22,38,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:80px;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ivory)}
+.brand-name{font-family:var(--serif);font-size:24px;font-weight:700;line-height:1}
+.brand-latin{font-family:var(--latin);font-size:12px;letter-spacing:.32em;color:var(--gold);margin-top:5px;direction:ltr;text-align:right}
+.nav{display:flex;gap:34px}
+.nav a{color:var(--ivory);text-decoration:none;font-size:17px;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;right:0;left:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .25s}
+.nav a:hover::after{transform:scaleX(1)}
+.menu-btn{display:none;width:48px;height:48px;background:transparent;border:1px solid var(--line);color:var(--ivory);cursor:pointer}
+.header-cta{min-height:46px;padding:0 22px;font-size:16px}
+
+/* hero */
+.hero{padding:72px 0 110px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+.hero-text{display:flex;flex-direction:column;gap:28px}
+.hero-place{color:var(--gold-soft);font-size:18px;display:flex;align-items:center;gap:14px}
+.hero-place::before{content:"";width:44px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(52px,7vw,96px);line-height:1.02;letter-spacing:-.01em}
+.hero-lead{font-size:21px;color:var(--stone);max-width:36ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.arch{position:relative;justify-self:center;width:min(100%,500px);aspect-ratio:5/7}
+.arch-frame{position:absolute;inset:0;border-radius:999px 999px 0 0;overflow:hidden;background:var(--ink-2)}
+.arch-frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 2.4s cubic-bezier(.2,.7,.2,1)}
+.arch-line{position:absolute;inset:-18px -18px 26px 26px;border:1px solid var(--gold);border-bottom:0;border-radius:999px 999px 0 0;pointer-events:none}
+.arch-key{position:absolute;top:-38px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:14px solid var(--gold)}
+.arch-caption{position:absolute;bottom:28px;right:-36px;background:var(--ink);border:1px solid var(--line);padding:18px 24px;font-family:var(--serif);font-size:19px;line-height:1.5;max-width:230px}
+/* load sequence */
+.js .arch-frame{clip-path:inset(100% 0 0 0);transition:clip-path 1.3s cubic-bezier(.7,0,.2,1)}
+.js .arch-line,.js .arch-key,.js .arch-caption{opacity:0;transition:opacity .9s .9s}
+.js .hero-text>*{opacity:0;transform:translateY(14px);transition:opacity .8s,transform .8s}
+.loaded .arch-frame{clip-path:inset(0 0 0 0)}
+.loaded .arch-frame img{transform:scale(1)}
+.loaded .arch-line,.loaded .arch-key,.loaded .arch-caption{opacity:1}
+.loaded .hero-text>*{opacity:1;transform:none}
+.loaded .hero-text>*:nth-child(2){transition-delay:.15s}
+.loaded .hero-text>*:nth-child(3){transition-delay:.3s}
+.loaded .hero-text>*:nth-child(4){transition-delay:.45s}
+
+/* facts strip */
+.facts{border-block:1px solid var(--line);background:var(--ink-2)}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.facts li{padding:34px 20px;text-align:center;display:flex;flex-direction:column;gap:4px}
+.facts li+li{border-right:1px solid var(--line)}
+.facts b{font-family:var(--serif);font-weight:500;font-size:40px;color:var(--gold);line-height:1.1}
+.facts span{color:var(--stone);font-size:16px}
+
+/* sections */
+section.block{padding:130px 0}
+.block-alt{background:var(--ink-2)}
+.sec-head{display:flex;flex-direction:column;gap:18px;max-width:640px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(38px,4.4vw,58px)}
+.sec-head p{color:var(--stone);font-size:19px}
+
+.offices .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:80px;align-items:center}
+.offices .sec-head{margin-bottom:32px}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.checks li{display:flex;gap:14px;align-items:baseline}
+.checks li::before{content:"";flex:none;width:8px;height:8px;background:var(--gold);transform:rotate(45deg) translateY(-2px)}
+.office-imgs{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:end}
+.office-imgs img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.office-imgs img:last-child{aspect-ratio:3/4.6}
+
+.meeting-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:stretch}
+.meeting-img{position:relative;min-height:520px}
+.meeting-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.form-card{border:1px solid var(--line);background:var(--ink);padding:40px;display:flex;flex-direction:column;gap:18px}
+.form-card h3{font-size:30px}
+.form-card .note{color:var(--stone);font-size:15px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field label{font-size:15px;color:var(--stone)}
+.field input,.field select,.field textarea{min-height:52px;width:100%;padding:12px 16px;background:var(--ink-2);border:1px solid var(--line);color:var(--ivory);font:inherit;font-size:17px;border-radius:0}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold-soft)}
+.field input::placeholder,.field textarea::placeholder{color:#8E8878}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.err{color:#F0A68F;font-size:15px;min-height:0}
+input[type="date"],input[type="time"]{color-scheme:dark}
+
+.amen{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.amen li{padding:34px 26px 34px 0;display:flex;flex-direction:column;gap:14px;border-bottom:1px solid var(--line)}
+.amen li:not(:nth-child(4n+1)){padding-right:26px;border-right:1px solid var(--line)}
+.amen svg{width:38px;height:38px;stroke:var(--gold);fill:none;stroke-width:1.2}
+.amen b{font-size:19px;font-weight:600}
+.amen span{color:var(--stone);font-size:16px;line-height:1.5}
+
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:16px}
+.gallery button{padding:0;border:0;background:var(--ink-2);cursor:zoom-in;overflow:hidden;position:relative}
+.gallery button img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery button:first-child{grid-row:span 2}
+.gallery button:nth-child(4){grid-column:span 2}
+.lightbox{position:fixed;inset:0;z-index:90;background:rgba(6,10,18,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex;animation:fade .25s}
+.lightbox img{max-height:86vh;max-width:min(1100px,100%);object-fit:contain;border:1px solid var(--line)}
+.lb-close{position:absolute;top:calc(env(safe-area-inset-top,0px) + 18px);left:18px;width:52px;height:52px;border:1px solid var(--line);background:var(--ink);color:var(--ivory);font-size:28px;cursor:pointer}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+.location .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.addr{font-family:var(--serif);font-size:clamp(40px,5vw,64px);line-height:1.1}
+.loc-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.loc-card{border:1px solid var(--line);padding:40px;display:flex;flex-direction:column;gap:22px;background:var(--ink-2)}
+.loc-card div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:16px}
+.loc-card div:last-child{border-bottom:0;padding-bottom:0}
+.loc-card dt{color:var(--stone)} .loc-card dd{margin:0;font-weight:600;text-align:left}
+
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:26px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:var(--serif);font-size:24px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;border-left:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(-45deg);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(135deg)}
+.faq details p{padding:0 0 28px;color:var(--stone);max-width:65ch}
+
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact h2{font-size:clamp(40px,4.6vw,62px)}
+.phone{display:flex;align-items:center;gap:18px;text-decoration:none;margin-top:36px}
+.phone-ic{width:66px;height:66px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;flex:none}
+.phone small{display:block;color:var(--stone);font-size:16px}
+.phone strong{display:block;font-family:var(--serif);font-weight:500;font-size:44px;color:var(--gold);direction:ltr;text-align:right;line-height:1.2}
+
+.site-footer{border-top:1px solid var(--line);padding:44px 0 52px;color:var(--stone);font-size:15px}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
+.site-footer a{color:var(--stone)}
+
+.wa-float{position:fixed;left:20px;bottom:calc(env(safe-area-inset-bottom,0px) + 20px);z-index:60;width:60px;height:60px;border-radius:50%;background:var(--gold);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.wa-float:hover{background:var(--gold-soft)}
+
+
+.perks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.perks li{display:flex;flex-direction:column;gap:8px;padding-top:22px;border-top:1px solid var(--gold)}
+.perks b{font-family:var(--serif);font-weight:500;font-size:23px;line-height:1.3}
+.perks span{color:var(--stone);font-size:16px;line-height:1.55}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.plan{border:1px solid var(--line);background:var(--ink);padding:36px 32px;display:flex;flex-direction:column;gap:14px}
+.plan.feature{border-color:var(--gold);background:var(--ink-3)}
+.plan h3{font-size:28px}
+.plan .who{color:var(--gold-soft);font-size:16px}
+.plan p{color:var(--stone);font-size:16px;line-height:1.6}
+.price{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.price small{color:var(--stone);font-size:15px}
+.price strong{font-family:var(--serif);font-weight:500;font-size:40px;color:var(--gold);line-height:1}
+.plan .btn{margin-top:6px}
+.plans-note{margin-top:22px;color:var(--stone);font-size:15px}
+.ways{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}
+.ways li{display:flex;gap:12px;align-items:flex-start}
+.ways svg{flex:none;width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.3;margin-top:3px}
+.ways b{display:block;font-weight:600}
+.ways span{color:var(--stone);font-size:15px}
+.finder{margin-top:10px;display:flex;flex-direction:column;gap:12px}
+.finder span{color:var(--stone);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{min-height:44px;padding:0 18px;background:transparent;border:1px solid var(--line);color:var(--ivory);font:inherit;font-size:16px;cursor:pointer}
+.chip:hover{border-color:var(--gold)}
+.chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--ink);font-weight:700}
+.avail-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.avail{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.office{border:1px solid var(--line);background:var(--ink-2);padding:26px;display:flex;flex-direction:column;gap:10px}
+.office-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.office h3{font-size:24px}
+.status{font-size:14px;padding:3px 10px;border:1px solid}
+.status.free{color:#A9D6A0;border-color:rgba(169,214,160,.5)}
+.status.soon{color:var(--gold-soft);border-color:var(--line)}
+.office .meta{color:var(--stone);font-size:16px}
+.office .price{padding-top:14px}
+.office .price strong{font-size:30px}
+.office a{margin-top:8px;align-self:flex-start;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.avail-empty{grid-column:1/-1;color:var(--stone);padding:28px;border:1px dashed var(--line);text-align:center}
+.extras{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.extras div{padding:30px 24px;display:flex;flex-direction:column;gap:8px}
+.extras div+div{border-right:1px solid var(--line)}
+.extras b{font-family:var(--serif);font-weight:500;font-size:22px}
+.extras span{color:var(--stone);font-size:16px;line-height:1.55}
+.meeting-side{display:flex;flex-direction:column;gap:28px}
+#bookForm{align-self:start;position:sticky;top:110px}
+.specs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.specs li{padding:18px 16px 18px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column}
+.specs li:not(:nth-child(3n+1)){padding-right:16px;border-right:1px solid var(--line)}
+.specs b{font-family:var(--serif);font-weight:500;font-size:24px;color:var(--gold);line-height:1.2}
+.specs span{color:var(--stone);font-size:15px}
+.rates{margin:0;border:1px solid var(--line);background:var(--ink);padding:8px 26px}
+.rates div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.rates div:last-child{border-bottom:0}
+.rates dt{color:var(--stone)} .rates dd{margin:0;font-family:var(--serif);font-size:24px;color:var(--gold)}
+.check{display:flex;gap:10px;align-items:center;font-size:16px;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--gold)}
+.estimate{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.estimate span{color:var(--stone);font-size:15px}
+.estimate strong{font-family:var(--serif);font-weight:500;font-size:30px;color:var(--gold)}
+.estimate small{color:var(--stone);font-size:14px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:1000px){
+  .nav,.header-cta{display:none}
+  .menu-btn{display:grid;place-items:center}
+  .nav.open{display:flex;position:absolute;top:80px;right:0;left:0;flex-direction:column;gap:0;background:var(--ink);border-bottom:1px solid var(--line);padding:8px 24px 20px}
+  .nav.open a{padding:16px 0;border-bottom:1px solid var(--line);font-size:19px}
+  .hero{padding:40px 0 80px}
+  .hero .wrap,.offices .wrap,.meeting-grid,.location .wrap,.contact .wrap{grid-template-columns:1fr;gap:48px}
+  .hero .arch{order:-1;width:min(100% - 40px,420px);margin-top:30px}
+  .arch-caption{right:-14px;bottom:18px;font-size:16px;padding:14px 18px}
+  .facts ul{grid-template-columns:repeat(2,1fr)}
+  .facts li:nth-child(3){border-right:0}
+  .facts li:nth-child(n+3){border-top:1px solid var(--line)}
+  section.block{padding:88px 0}
+  .meeting-img{min-height:320px}
+  #bookForm{position:static}
+  .specs{grid-template-columns:repeat(2,1fr)}
+  .specs li,.specs li:not(:nth-child(3n+1)){padding:16px 14px;border-right:0}
+  .specs li:nth-child(even){border-right:1px solid var(--line)}
+  .amen{grid-template-columns:repeat(2,1fr)}
+  .perks{grid-template-columns:1fr 1fr}
+  .avail{grid-template-columns:1fr 1fr}
+  .extras{grid-template-columns:1fr 1fr}
+  .extras div:nth-child(3){border-right:0}
+  .extras div:nth-child(n+3){border-top:1px solid var(--line)}
+  .plans{grid-template-columns:1fr}
+  .amen li,.amen li:not(:nth-child(4n+1)){padding:28px 18px;border-right:0}
+  .amen li:nth-child(even){border-right:1px solid var(--line)}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,200px)}
+  .gallery button:first-child{grid-row:span 1;grid-column:span 2}
+  .gallery button:nth-child(4){grid-column:span 2}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .form-card,.loc-card{padding:26px}
+  .row{grid-template-columns:1fr}
+  .phone strong{font-size:34px}
+  .faq summary{font-size:20px}
+  .amen li,.amen li:not(:nth-child(4n+1)){padding:22px 12px}
+  .perks{grid-template-columns:1fr}
+  .avail{grid-template-columns:1fr}
+  .extras{grid-template-columns:1fr}
+  .extras div+div{border-right:0;border-top:1px solid var(--line)}
+  .ways{grid-template-columns:1fr}
+  .amen b{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  html{scroll-behavior:auto}
+}
+
+.crumbs{font-size:15px;color:var(--stone);margin-bottom:22px}
+.crumbs a{color:var(--stone)} .crumbs span{color:var(--ivory)}
+.page-hero{padding:56px 0 100px}
+.page-hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.page-hero h1{font-size:clamp(44px,5.6vw,80px);line-height:1.05}
+.page-hero .lead{font-size:20px;color:var(--stone);margin-top:24px;max-width:40ch}
+.page-hero .hero-actions{margin-top:32px}
+.page-hero figure{margin:0;position:relative}
+.page-hero figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.page-hero figure::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);z-index:-1}
+.price-tag{display:inline-flex;align-items:baseline;gap:8px;margin-top:28px;padding:14px 22px;border:1px solid var(--line);background:var(--ink-2)}
+.price-tag strong{font-family:var(--serif);font-weight:500;font-size:34px;color:var(--gold)}
+.price-tag span{color:var(--stone)}
+.uses{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.uses li{padding:26px 22px 26px 0;border-bottom:1px solid var(--line)}
+.uses li:not(:nth-child(3n+1)){padding-right:22px;border-right:1px solid var(--line)}
+.uses b{display:block;font-family:var(--serif);font-weight:500;font-size:22px;margin-bottom:6px}
+.uses span{color:var(--stone);font-size:16px;line-height:1.55}
+.strip{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px}
+.strip button{padding:0;border:0;background:var(--ink-2);cursor:zoom-in;overflow:hidden;aspect-ratio:4/5}
+.strip button:first-child{aspect-ratio:auto}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.strip button:hover img{transform:scale(1.04)}
+.more-link{display:inline-block;margin-top:24px;font-weight:600;text-underline-offset:5px}
+.teaser-card{border:1px solid var(--line);background:var(--ink);padding:40px;display:flex;flex-direction:column;gap:18px;align-self:start}
+.teaser-card h3{font-size:30px}
+.teaser-card p{color:var(--stone)}
+.g-filters{margin-bottom:32px}
+.masonry{columns:3 300px;column-gap:16px}
+.masonry figure{margin:0 0 16px;break-inside:avoid;position:relative}
+.masonry figure[hidden]{display:none}
+.masonry button{display:block;width:100%;padding:0;border:0;background:var(--ink-2);cursor:zoom-in;overflow:hidden}
+.masonry img{width:100%;height:auto;transition:transform .6s}
+.masonry button:hover img{transform:scale(1.03)}
+.masonry figcaption{font-size:15px;color:var(--stone);padding:10px 2px 0}
+.tag{display:inline-block;font-size:13px;color:var(--gold-soft);border:1px solid var(--line);padding:1px 8px;margin-inline-start:8px}
+.lb-cap{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);right:0;left:0;text-align:center;color:var(--stone);font-size:16px}
+@media (max-width:1000px){
+  .page-hero .wrap{grid-template-columns:1fr;gap:44px}
+  .page-hero figure{order:-1;margin-inline:0 18px}
+  .uses{grid-template-columns:1fr 1fr}
+  .uses li,.uses li:not(:nth-child(3n+1)){padding:22px 14px;border-right:0}
+  .uses li:nth-child(even){border-right:1px solid var(--line)}
+  .strip{grid-template-columns:1fr 1fr}
+  .strip button:first-child{grid-column:span 2;aspect-ratio:4/3}
+}
+@media (max-width:560px){.uses{grid-template-columns:1fr}.uses li:nth-child(even){border-right:0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">דלג לתוכן</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="הלשכה – דף הבית">
+      <svg width="38" height="46" viewBox="0 0 40 48" fill="none" stroke="#C9A45C" stroke-width="1.4" aria-hidden="true"><path d="M4 47V20a16 16 0 0 1 32 0v27"/><path d="M10 47V21a10 10 0 0 1 20 0v26"/><path d="M17 4l3-4 3 4z"/><path d="M1 47h38"/></svg>
+      <span><span class="brand-name">הלשכה</span><span class="brand-latin" style="display:block">THE CHAMBER</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="ניווט ראשי">
+      <a href="index.html#offices">המשרדים</a>
+      <a href="index.html#plans">מחירים</a>
+      <a href="meeting-room.html">חדר ישיבות VIP</a>
+      <a href="gallery.html">גלריה</a>
+      <a href="index.html#location">הגעה</a>
+      <a href="index.html#contact">צור קשר</a>
+    </nav>
+    <a class="btn btn-gold header-cta" href="index.html#contact">תיאום סיור</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="פתיחת תפריט">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="hero-place">משרדי בוטיק בירושלים, תובל 15</p>
+      <h1>לא כל משרד.<br>זוהי בחירה.</h1>
+      <p class="hero-lead">8 משרדים פרטיים, מרוהטים ומוכנים לעבודה, וחדר ישיבות מפואר. סביבה שמכבדת אתכם ומרשימה כל לקוח שנכנס בדלת.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#contact">לתיאום סיור במתחם</a>
+        <a class="btn btn-line" href="meeting-room.html">חדר ישיבות VIP</a>
+      </div>
+      <div class="finder" role="group" aria-labelledby="finderL">
+        <span id="finderL">כמה עמדות עבודה אתם צריכים?</span>
+        <div class="chips">
+          <button type="button" class="chip" data-size="1">עמדה אחת</button>
+          <button type="button" class="chip" data-size="2">2 עמדות</button>
+          <button type="button" class="chip" data-size="3">3 עמדות</button>
+        </div>
+      </div>
+    </div>
+    <div class="arch" aria-hidden="false">
+      <span class="arch-key" aria-hidden="true"></span>
+      <span class="arch-line" aria-hidden="true"></span>
+      <div class="arch-frame"><img src="images/arch.jpg" alt="חדר הישיבות VIP של הלשכה: שולחן שיש שחור, קירות שיש ונברשת זהב" width="857" height="1200"></div>
+      <p class="arch-caption">סביבה יוקרתית שמכבדת הצלחה ויוצרת יתרון.</p>
+    </div>
+  </div>
+</section>
+
+<section class="facts" aria-label="המתחם במספרים">
+  <ul class="wrap">
+    <li><b>8</b><span>משרדים פרטיים</span></li>
+    <li><b>1 עד 3</b><span>עמדות בכל משרד</span></li>
+    <li><b>זיהוי פנים</b><span>כניסה אלקטרונית לכל משרד</span></li>
+    <li><b>קומת קרקע</b><span>בלי מעליות ובלי המתנה</span></li>
+  </ul>
+</section>
+
+<section class="block" style="padding-bottom:0" aria-labelledby="whyH">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="whyH">למה הלשכה</h2></div>
+    <ul class="perks">
+      <li><b>נכנסים ומתחילים לעבוד</b><span>כל משרד מגיע מרוהט, עם אינטרנט ומיזוג אישי. מביאים מחשב וזהו.</span></li>
+      <li><b>מחיר אחד, בלי הפתעות</b><span>ארנונה, חשמל, מים, ניקיון, אינטרנט, קפה ושתייה כלולים בתשלום החודשי.</span></li>
+      <li><b>פרטיות מלאה</b><span>כניסה אלקטרונית עם זיהוי פנים לכל משרד. רק מי שצריך נכנס.</span></li>
+      <li><b>רושם שנשאר</b><span>לובי מכובד וחדר ישיבות מפואר שמשדרים ללקוחות שאתם רציניים.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block offices" id="offices">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <h2>משרד פרטי, בסטנדרט אחר.</h2>
+        <p>כל משרד מעוצב בקפידה: רצפת שיש, מחיצות זכוכית במסגרת שחורה ותאורה נסתרת. מגיעים, מתחברים ומתחילים לעבוד.</p>
+      </div>
+      <ul class="checks">
+        <li>משרדים לעמדה אחת, ל-2 עמדות או ל-3 עמדות</li>
+        <li>ריהוט, אינטרנט ומיזוג אישי בכל משרד</li>
+        <li>כניסה אלקטרונית וזיהוי פנים לכל משרד</li>
+        <li>מטבח משותף ופינת קפה, בקומת הקרקע</li>
+      </ul>
+      <div class="hero-actions" style="margin-top:40px"><a class="btn btn-gold" href="#contact">לבירור זמינות משרד</a></div>
+    </div>
+    <div class="office-imgs">
+      <img src="images/render-lounge.jpg" alt="הדמיה: פינת ישיבה בלובי" width="223" height="183">
+      <img src="images/render-corridor.jpg" alt="הדמיה: מסדרון המשרדים" width="226" height="183">
+    </div>
+  </div>
+</section>
+
+<section class="block block-alt" id="plans">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>בחרו את הפתרון שלכם</h2>
+      <p>שלושה גדלים של משרדים פרטיים, כולם מרוהטים ומאובזרים. המחיר כולל הכל, בלי חשבונות נוספים.</p>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <span class="who">לעצמאים ולעבודה שקטה</span>
+        <h3>משרד לעמדה אחת</h3>
+        <p>משרד פרטי משלכם, עם דלת שנסגרת ומקום לקבל לקוח.</p>
+        <div class="price" data-price="one"><strong style="font-size:26px">מחיר בפנייה</strong></div>
+        <a class="btn btn-line" href="#contact" data-need="משרד לעמדה אחת">לבירור זמינות</a>
+      </article>
+      <article class="plan feature">
+        <span class="who">לשותפים ולצוות קטן</span>
+        <h3>משרד ל-2 עמדות</h3>
+        <p>מקום נוח לשניים, עם פרטיות מלאה ונוכחות מכובדת.</p>
+        <div class="price" data-price="two"><strong style="font-size:26px">מחיר בפנייה</strong></div>
+        <a class="btn btn-gold" href="#contact" data-need="משרד ל-2 עמדות">לבירור זמינות</a>
+      </article>
+      <article class="plan">
+        <span class="who">לעסק עם צוות</span>
+        <h3>משרד ל-3 עמדות</h3>
+        <p>משרד מרווח לשלושה אנשים, מוכן לעבודה מהיום הראשון.</p>
+        <div class="price" data-price="three"><strong style="font-size:26px">מחיר בפנייה</strong></div>
+        <a class="btn btn-line" href="#contact" data-need="משרד ל-3 עמדות">לבירור זמינות</a>
+      </article>
+    </div>
+    <p class="plans-note">רוצים הצעה מדויקת לצוות שלכם? השאירו פרטים ונחזור עם מחיר מותאם.</p>
+  </div>
+</section>
+
+<section class="block" id="available" hidden>
+  <div class="wrap">
+    <div class="avail-top">
+      <div class="sec-head" style="margin-bottom:0">
+        <h2>משרדים זמינים עכשיו</h2>
+        <p>סננו לפי מספר העמדות ובחרו משרד לבירור.</p>
+      </div>
+      <div class="chips" role="group" aria-label="סינון לפי מספר עמדות">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">הכל</button>
+        <button type="button" class="chip" data-filter="1" aria-pressed="false">עמדה אחת</button>
+        <button type="button" class="chip" data-filter="2" aria-pressed="false">2 עמדות</button>
+        <button type="button" class="chip" data-filter="3" aria-pressed="false">3 עמדות</button>
+      </div>
+    </div>
+    <div class="avail" id="avail" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="block block-alt" id="meeting">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>חדר ישיבות VIP. המקום שבו נסגרות עסקאות.</h2>
+      <p>חדר מפואר לעד <span data-k="m.capacity">20</span> משתתפים, עם כל מה שצריך לישיבה, הרצאה או אירוח לקוחות. שלחו בקשה ונאשר את המועד בהקדם.</p>
+    </div>
+    <div class="meeting-grid">
+      <div class="meeting-side">
+        <div class="meeting-img"><img src="images/room-wide.jpg" alt="חדר הישיבות VIP: שולחן שיש ארוך ל-20 משתתפים ומסך גדול" width="1400" height="788"></div>
+        <ul class="specs">
+          <li><b>עד <span data-k="m.capacity">20</span></b><span>משתתפים</span></li>
+          <li><b>2</b><span>מסכי פלזמה</span></li>
+          <li><b>מקרן</b><span>ומערכת הגברה</span></li>
+          <li><b>מיני בר</b><span>ופינת קפה</span></li>
+          <li><b>מטבח</b><span>ושירותים צמודים</span></li>
+          <li><b>אינטרנט</b><span>מהיר</span></li>
+        </ul>
+        <dl class="rates">
+          <div><dt>3 שעות ראשונות (מינימום)</dt><dd><span data-k="m.base">900</span> ₪</dd></div>
+          <div><dt>כל שעה נוספת</dt><dd><span data-k="m.extra">100</span> ₪</dd></div>
+          <div><dt>ניקיון, כשאוכלים במקום</dt><dd><span data-k="m.cleaning">150</span> ₪</dd></div>
+        </dl>
+      </div>
+      <div class="teaser-card">
+        <h3><span data-k="m.base">900</span> ₪ ל-<span data-k="m.hours">3</span> שעות</h3>
+        <p>כל שעה נוספת <span data-k="m.extra">100</span> ₪. אם אוכלים במקום, תוספת ניקיון של <span data-k="m.cleaning">150</span> ₪. בדף החדר תמצאו מחשבון מחיר, תמונות וטופס הזמנה.</p>
+        <a class="btn btn-gold" href="meeting-room.html#book">להזמנת החדר</a>
+        <a class="btn btn-line" href="meeting-room.html">לכל פרטי החדר</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="block block-alt" id="amenities">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>הכל כלול. אתם רק עובדים.</h2>
+      <p>כל מה שמשרד רציני צריך כבר נמצא כאן, בלי שתצטרכו לדאוג לזה.</p>
+    </div>
+    <ul class="amen">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><b>אבטחה 24/7</b><span>שקט נפשי לכם ולציוד שלכם</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><circle cx="12" cy="10" r="2.5"/><path d="M8 17a4 4 0 0 1 8 0"/></svg><b>זיהוי פנים</b><span>כניסה אלקטרונית נפרדת לכל משרד</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7"/></svg><b>מיזוג אישי</b><span>כל משרד מכוון את הטמפרטורה בעצמו</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0"/><path d="M5.5 12.5a10 10 0 0 1 13 0"/><path d="M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/></svg><b>אינטרנט מהיר</b><span>חיבור יציב בכל משרד</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="9" width="16" height="7"/><path d="M6 16v4M18 16v4M8 9V6h8v3"/></svg><b>ריהוט מלא</b><span>מגיעים עם מחשב ומתחילים לעבוד</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3v3M12 3v3"/></svg><b>פינת קפה</b><span>קפה ושתייה לכם ולאורחים</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 10h18M8 14h3"/></svg><b>מטבח משותף</b><span>מקום לארוחה והפסקה קצרה</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 21l2-9M17 21l-2-9"/><path d="M6 12h12l-1-4H7z"/><path d="M12 8V3"/></svg><b>ניקיון</b><span>משרד מסודר ונקי</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7h14v14"/><path d="M10 21v-5h4v5"/></svg><b>קומת קרקע</b><span>נכנסים ישר, בלי מעליות</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg><b>לובי וקבלת פנים</b><span>רושם ראשון שמכבד את העסק</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="1"/><path d="M8 21h8M12 17v4"/></svg><b>חדר ישיבות VIP</b><span>עד <span data-k="m.capacity">20</span> איש, מקרן, הגברה ו-2 מסכים</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><b>הכל כלול</b><span>ארנונה, חשמל ומים בתשלום אחד</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="gallery">
+  <div class="wrap">
+    <div class="sec-head"><h2>מבט מבפנים</h2></div>
+    <div class="gallery">
+      <button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות"><img src="images/room-main.jpg" alt="חדר הישיבות VIP" width="1400" height="1050" loading="lazy"></button>
+      <button type="button" data-zoom aria-label="הגדלת תמונה: ערב אירוח"><img src="images/room-event.jpg" alt="חדר הישיבות בהעמדה לארוחה" width="1200" height="1600" loading="lazy"></button>
+      <button type="button" data-zoom aria-label="הגדלת תמונה: פינת הקפה"><img src="images/room-dinner.jpg" alt="פינת הקפה והמיני בר בחדר הישיבות" width="1010" height="1080" loading="lazy"></button>
+      <button type="button" data-zoom aria-label="הגדלת תמונה: החדר מזווית רחבה"><img src="images/room-wide.jpg" alt="חדר הישיבות VIP מזווית רחבה" width="1400" height="788" loading="lazy"></button>
+    </div>
+    <a class="more-link" href="gallery.html">לגלריה המלאה</a>
+  </div>
+</section>
+
+<section class="block block-alt location" id="location">
+  <div class="wrap">
+    <div>
+      <div class="sec-head" style="margin-bottom:24px"><h2>איך מגיעים</h2></div>
+      <p class="addr">תובל 15<br>ירושלים</p>
+      <div class="loc-actions">
+        <a class="btn btn-gold" href="https://waze.com/ul?q=%D7%AA%D7%95%D7%91%D7%9C%2015%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&navigate=yes" target="_blank" rel="noopener">ניווט בוויז</a>
+        <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=%D7%AA%D7%95%D7%91%D7%9C%2015%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener">פתיחה במפות גוגל</a>
+      </div>
+      <ul class="ways">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7h14v14"/><path d="M10 21v-5h4v5"/></svg><span><b>קומת קרקע</b>נגיש, בלי מעליות</span></li>
+      </ul>
+    </div>
+    <dl class="loc-card">
+      <div><dt>כתובת</dt><dd>תובל 15, ירושלים</dd></div>
+      <div><dt>קומה</dt><dd>קרקע</dd></div>
+      <div><dt>ביקור במתחם</dt><dd>בתיאום מראש</dd></div>
+      <div><dt>טלפון</dt><dd><a href="tel:0532453345" dir="ltr">053-2453345</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>שאלות נפוצות</h2></div>
+    <div class="faq">
+      <details><summary>אפשר לבוא לראות את המשרדים לפני שמחליטים?</summary><p>בהחלט. מתאמים סיור פרטי במתחם בטלפון 053-2453345 או דרך הטופס בתחתית העמוד, ומראים לכם את המשרדים הפנויים ואת חדר הישיבות.</p></details>
+      <details><summary>באילו גדלים יש משרדים?</summary><p>במתחם 8 משרדים פרטיים: לעמדה אחת, ל-2 עמדות ול-3 עמדות. ספרו לנו כמה אנשים צריכים לשבת ונציע את המשרד המתאים.</p></details>
+      <details><summary>איך מזמינים את חדר הישיבות?</summary><p>ממלאים את טופס ההזמנה בעמוד עם תאריך ושעות. ההזמנה המינימלית היא 3 שעות. הבקשה נשלחת אלינו בוואטסאפ, ואנחנו חוזרים אליכם לאישור המועד.</p></details>
+      <details><summary>כמה עולה חדר הישיבות?</summary><p><span data-k="m.base">900</span> ₪ ל-3 השעות הראשונות, ו-<span data-k="m.extra">100</span> ₪ לכל שעה נוספת. אם אוכלים במקום, יש תוספת ניקיון של <span data-k="m.cleaning">150</span> ₪. החדר מתאים לעד <span data-k="m.capacity">20</span> משתתפים וכולל מקרן, הגברה, 2 מסכי פלזמה, מיני בר, מטבח ושירותים צמודים.</p></details>
+      <details><summary>איך נכנסים למשרד?</summary><p>לכל משרד יש כניסה אלקטרונית עם זיהוי פנים, כך שרק אתם והאנשים שאישרתם נכנסים.</p></details>
+      <details><summary>המשרדים מגיעים מרוהטים?</summary><p>כן. כל משרד מגיע מרוהט, עם אינטרנט ומיזוג אישי. מביאים מחשב ומתחילים לעבוד.</p></details>
+      <details><summary>מה כלול בתשלום החודשי?</summary><p>ארנונה, חשמל, מים, ניקיון, אינטרנט, קפה ושתייה, ושימוש במטבח המשותף. אין חשבונות נוספים בסוף החודש.</p></details>
+      <details><summary>אפשר להזמין את חדר הישיבות בלי לשכור משרד?</summary><p>כן. חדר הישיבות זמין גם ללקוחות מבחוץ, בהזמנה מראש, החל מ-3 שעות.</p></details>
+      <details><summary>כמה עולה משרד?</summary><p>המחיר תלוי בגודל המשרד ובתקופה. התקשרו או השאירו פרטים ונשלח לכם הצעה מסודרת.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="block contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>זה הזמן לקחת את העסק לשלב הבא.</h2>
+      <p style="color:var(--stone);font-size:19px;margin-top:22px;max-width:40ch">השאירו פרטים לתיאום סיור פרטי, או פשוט התקשרו לדניאל.</p>
+      <a class="phone" href="tel:0532453345">
+        <span class="phone-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C9A45C" stroke-width="1.5" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg></span>
+        <span><small>דניאל, לפרטים ותיאום סיור</small><strong>053-2453345</strong></span>
+      </a>
+    </div>
+    <form class="form-card" id="leadForm" novalidate>
+      <h3>תיאום סיור פרטי</h3>
+      <div class="field"><label for="lName">שם מלא</label><input id="lName" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="lPhone">טלפון</label><input id="lPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr" style="text-align:right" required></div>
+      <div class="field"><label for="lNeed">מה אתם מחפשים?</label>
+        <select id="lNeed" name="need"><option>משרד לעמדה אחת</option><option>משרד ל-2 עמדות</option><option>משרד ל-3 עמדות</option><option>חדר ישיבות VIP</option><option>עדיין לא בטוח/ה</option></select></div>
+      <div class="field"><label for="lSeats">כמה עמדות עבודה צריך?</label><input id="lSeats" name="seats" type="number" min="1" max="3" inputmode="numeric"></div>
+      <div class="field"><label for="lMsg">הודעה (לא חובה)</label><textarea id="lMsg" name="msg"></textarea></div>
+      <p class="err" id="lErr" role="alert"></p>
+      <button class="btn btn-gold" type="submit">שליחה בוואטסאפ</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span style="font-family:var(--serif);font-size:20px;color:var(--ivory)">הלשכה, מתחם עסקים</span>
+    <span>תובל 15, ירושלים</span>
+    <span><a href="meeting-room.html">חדר ישיבות VIP בירושלים</a> · <a href="gallery.html">גלריה</a></span>
+    <a href="#" id="a11y">הצהרת נגישות</a>
+    <span>© <span id="yr"></span> הלשכה. כל הזכויות שמורות.</span>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/972532453345" target="_blank" rel="noopener" aria-label="שיחה בוואטסאפ">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#0D1626" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3z"/></svg>
+</a>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="תמונה מוגדלת">
+  <button class="lb-close" id="lbClose" aria-label="סגירה">×</button>
+  <img id="lbImg" alt="">
+  <p class="lb-cap" id="lbCap"></p>
+</div>
+<script>
+(function(){
+  var root=document.documentElement, $=function(id){return document.getElementById(id);};
+  root.classList.add('js');
+  requestAnimationFrame(function(){requestAnimationFrame(function(){root.classList.add('loaded');});});
+  if($('yr'))$('yr').textContent=new Date().getFullYear();
+  var btn=$('menuBtn'), nav=$('nav');
+  btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'סגירת תפריט':'פתיחת תפריט');});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+  if($('hideDraft'))$('hideDraft').addEventListener('click',function(){document.body.classList.add('hide-draft');});
+  $('a11y').addEventListener('click',function(e){e.preventDefault();});
+  var CFG={m:{base:900,hours:3,extra:100,cleaning:150,capacity:20}};
+  var WA='972532453345';
+  function getJSON(p){return fetch(p,{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});}
+  function setK(k,v){document.querySelectorAll('[data-k="'+k+'"]').forEach(function(el){el.textContent=v;});}
+  getJSON('content/meeting.json').then(function(d){if(!d)return;
+    CFG.m={base:+d.base_price||900,hours:+d.base_hours||3,extra:+d.extra_hour||100,cleaning:+d.cleaning||150,capacity:+d.capacity||20};
+    setK('m.base',CFG.m.base.toLocaleString('he-IL'));setK('m.hours',CFG.m.hours);setK('m.extra',CFG.m.extra);setK('m.cleaning',CFG.m.cleaning);setK('m.capacity',CFG.m.capacity);
+    if(document.getElementById('bPpl'))document.getElementById('bPpl').max=CFG.m.capacity;
+    if(window.__quote)window.__quote();});
+  getJSON('content/settings.json').then(function(d){if(!d||!d.phone)return;
+    var digits=d.phone.replace(/\D/g,''); WA=d.whatsapp?d.whatsapp.replace(/\D/g,''):('972'+digits.replace(/^0/,''));
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.href='tel:'+digits;if(/^[\d\-\s]+$/.test(a.textContent.trim()))a.textContent=d.phone;});
+    document.querySelectorAll('[data-k="phone"]').forEach(function(el){el.textContent=d.phone;});
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(a){a.href='https://wa.me/'+WA;});
+    if(d.contact_name)setK('contact_name',d.contact_name);});
+  getJSON('content/prices.json').then(function(d){if(!d)return;
+    [['one',d.office_1],['two',d.office_2],['three',d.office_3]].forEach(function(p){
+      var el=document.querySelector('[data-price="'+p[0]+'"]'); if(!el||!p[1])return;
+      el.innerHTML='<small>החל מ-</small><strong>'+Number(p[1]).toLocaleString('he-IL')+' ₪</strong><small>'+(d.vat_included?'כולל מע"מ':'+ מע"מ')+' לחודש</small>';});});
+  function openWA(t){window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank','noopener');}
+
+  /* booking + price */
+  if($('bookForm')){
+    var today=new Date(); $('bDate').min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+    var mins=function(t){var p=t.split(':');return (+p[0])*60+(+p[1]);};
+    var quote=function(){
+      var a=$('bFrom').value,b=$('bTo').value,food=$('bFood').checked;
+      var M=CFG.m, h=(a&&b&&b>a)?(mins(b)-mins(a))/60:0, extra=Math.max(0,Math.ceil(h-M.hours));
+      var total=M.base+extra*M.extra+(food?M.cleaning:0);
+      $('bEst').textContent=total.toLocaleString('he-IL')+' ₪';
+      $('bEstNote').textContent=h?(h+' שעות'+(extra?', כולל '+extra+' שעות נוספות':'')+(food?', כולל ניקיון':'')):M.hours+' שעות מינימום';
+      return {h:h,total:total,food:food};
+    };
+    window.__quote=quote;
+    ['bFrom','bTo','bFood'].forEach(function(id){$(id).addEventListener('input',quote);$(id).addEventListener('change',quote);});
+    $('bookForm').addEventListener('submit',function(e){
+      e.preventDefault(); var f=e.target, err=$('bErr');
+      var n=f.name.value.trim(), d=f.date.value, a=f.from.value, b=f.to.value, p=f.people.value;
+      if(!n||!d||!a||!b){err.textContent='כדי לשלוח צריך למלא שם, תאריך ושעות.';return;}
+      if(b<=a){err.textContent='שעת הסיום צריכה להיות אחרי שעת ההתחלה.';return;}
+      var q=quote();
+      if(q.h<CFG.m.hours){err.textContent='ההזמנה המינימלית היא '+CFG.m.hours+' שעות. האריכו את שעת הסיום.';return;}
+      if(p&&+p>CFG.m.capacity){err.textContent='החדר מתאים לעד '+CFG.m.capacity+' משתתפים.';return;}
+      err.textContent='';
+      openWA('שלום, אני '+n+' ואשמח להזמין את חדר הישיבות VIP בהלשכה.\nתאריך: '+d.split('-').reverse().join('/')+'\nשעות: '+a+'–'+b+' ('+q.h+' שעות)'+(p?'\nמשתתפים: '+p:'')+(q.food?'\nנאכל במקום':'')+'\nהערכת מחיר: '+q.total+' ₪');
+    });
+  }
+
+  /* lead form */
+  if($('leadForm')){
+    $('leadForm').addEventListener('submit',function(e){
+      e.preventDefault(); var f=e.target, err=$('lErr');
+      var n=f.name.value.trim(), ph=f.phone.value.trim();
+      if(!n||ph.replace(/\D/g,'').length<9){err.textContent='כדי לשלוח צריך למלא שם ומספר טלפון תקין.';return;}
+      err.textContent='';
+      openWA('שלום, אני '+n+' ואשמח לתאם סיור בהלשכה.\nטלפון: '+ph+'\nמחפש/ת: '+f.need.value+(f.seats.value?'\nעמדות: '+f.seats.value:'')+(f.msg.value.trim()?'\n'+f.msg.value.trim():''));
+    });
+    document.querySelectorAll('[data-need]').forEach(function(a){a.addEventListener('click',function(){var sel=$('lNeed');for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===a.getAttribute('data-need'))sel.selectedIndex=i;}});});
+  }
+
+  /* availability */
+  if($('avail')){
+    var OFFICES=[];
+    var grid=$('avail');
+    var render=function(f){
+      var list=OFFICES.filter(function(o){return f==='all'||String(o.seats)===f;});
+      grid.innerHTML=list.length?list.map(function(o){
+        return '<article class="office"><div class="office-head"><h3>'+o.n+'</h3><span class="status '+(o.st==='פנוי'?'free">פנוי עכשיו':'soon">'+o.st)+'</span></div>'+
+        '<p class="meta">'+(o.seats===1?'עמדה אחת':o.seats+' עמדות עבודה')+'</p>'+
+        (o.price?'<div class="price"><small>החל מ-</small><strong>'+Number(o.price).toLocaleString('he-IL')+' ₪</strong><small>לחודש</small></div>':'')+
+        '<a href="#contact" data-office="'+o.n+'" data-seats="'+o.seats+'">לבירור על '+o.n+'</a></article>';
+      }).join(''):'<p class="avail-empty">אין כרגע משרד פנוי בגודל הזה. השאירו פרטים ונעדכן כשיתפנה.</p>';
+    };
+    var setFilter=function(f){document.querySelectorAll('[data-filter]').forEach(function(c){c.setAttribute('aria-pressed',c.getAttribute('data-filter')===f);});render(f);};
+    document.querySelectorAll('[data-filter]').forEach(function(c){c.addEventListener('click',function(){setFilter(c.getAttribute('data-filter'));});});
+    document.querySelectorAll('[data-size]').forEach(function(c){c.addEventListener('click',function(){setFilter(c.getAttribute('data-size'));($('available').hidden?$('plans'):$('available')).scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});});
+    grid.addEventListener('click',function(e){var a=e.target.closest('[data-office]');if(!a)return;var s=+a.getAttribute('data-seats');$('lNeed').selectedIndex=s-1;$('lSeats').value=s;$('lMsg').value='מתעניין/ת ב'+a.getAttribute('data-office');});
+    getJSON('content/offices.json').then(function(d){
+      var list=(d&&d.offices||[]).filter(function(o){return o.name&&o.seats&&o.status!=='מושכר';}).map(function(o){return {n:o.name,seats:+o.seats,st:o.status||'פנוי',price:o.price};});
+      if(!list.length)return; OFFICES=list; $('available').hidden=false; render('all');});
+  }
+
+  /* gallery from CMS */
+  var mas=document.querySelector('.masonry');
+  if(mas){getJSON('content/gallery.json').then(function(d){
+    if(!d||!d.photos||!d.photos.length)return;
+    mas.innerHTML=d.photos.filter(function(p){return p.image;}).map(function(p){
+      var alt=(p.caption||'').replace(/"/g,'&quot;');
+      return '<figure data-cat="'+(p.category==='אירועים וארוחות'?'events':'room')+'"><button type="button" data-zoom aria-label="הגדלת תמונה: '+alt+'"><img src="'+p.image.replace(/^\//,'')+'" alt="'+alt+'" loading="lazy"></button><figcaption>'+(p.caption||'')+'</figcaption></figure>';}).join('');
+    bindZoom();});}
+  /* gallery filter */
+  var gf=document.querySelectorAll('[data-gfilter]');
+  gf.forEach(function(c){c.addEventListener('click',function(){
+    var f=c.getAttribute('data-gfilter');
+    gf.forEach(function(x){x.setAttribute('aria-pressed',x===c);});
+    document.querySelectorAll('.masonry figure').forEach(function(fig){fig.hidden=!(f==='all'||fig.getAttribute('data-cat')===f);});
+  });});
+
+  /* lightbox */
+  var lb=$('lb'), lbImg=$('lbImg'), last=null;
+  function bindZoom(){document.querySelectorAll('[data-zoom]').forEach(function(b){if(b.__z)return;b.__z=1;b.addEventListener('click',function(){
+    var im=b.querySelector('img'); lbImg.src=im.src; lbImg.alt=im.alt; $('lbCap').textContent=im.alt; last=b; lb.classList.add('open'); $('lbClose').focus();});});}
+  bindZoom();
+  var close=function(){lb.classList.remove('open');if(last)last.focus();};
+  $('lbClose').addEventListener('click',close);
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))close();});
+})();
+</script>
+</body>
+</html>

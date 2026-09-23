@@ -1,0 +1,83 @@
+# ממשק הניהול של אתר הלשכה – Pages CMS (https://app.pagescms.org)
+media:
+  input: images
+  output: /images
+
+content:
+  - name: offices
+    label: "משרדים זמינים"
+    type: file
+    format: json
+    path: content/offices.json
+    fields:
+      - name: offices
+        label: רשימת המשרדים
+        description: "משרד בסטטוס מושכר לא יוצג באתר. כשהרשימה ריקה, האזור מוסתר."
+        type: object
+        list:
+          collapsible:
+            summary: "{name} – {status}"
+        fields:
+          - { name: name, label: שם או מספר המשרד, type: string, required: true }
+          - name: seats
+            label: מספר עמדות
+            type: select
+            options: { values: ["1", "2", "3"] }
+          - name: status
+            label: סטטוס
+            type: select
+            options: { values: ["פנוי", "מתפנה בקרוב", "מושכר"] }
+          - { name: price, label: "מחיר חודשי בש״ח (לא חובה)", type: number }
+
+  - name: prices
+    label: "מחירי משרדים"
+    type: file
+    format: json
+    path: content/prices.json
+    fields:
+      - { name: office_1, label: "מחיר החל מ- למשרד לעמדה אחת (ריק = מחיר בפנייה)", type: number }
+      - { name: office_2, label: "מחיר החל מ- למשרד ל-2 עמדות", type: number }
+      - { name: office_3, label: "מחיר החל מ- למשרד ל-3 עמדות", type: number }
+      - { name: vat_included, label: "המחירים כוללים מע״מ", type: boolean }
+
+  - name: meeting
+    label: "חדר ישיבות VIP"
+    type: file
+    format: json
+    path: content/meeting.json
+    fields:
+      - { name: capacity, label: מספר משתתפים מקסימלי, type: number }
+      - { name: base_price, label: "מחיר בסיס בש״ח", type: number }
+      - { name: base_hours, label: שעות כלולות במחיר הבסיס (מינימום), type: number }
+      - { name: extra_hour, label: "מחיר לכל שעה נוספת בש״ח", type: number }
+      - { name: cleaning, label: "תוספת ניקיון כשאוכלים במקום בש״ח", type: number }
+
+  - name: gallery
+    label: "גלריה"
+    type: file
+    format: json
+    path: content/gallery.json
+    fields:
+      - name: photos
+        label: תמונות
+        type: object
+        list:
+          collapsible:
+            summary: "{caption}"
+        fields:
+          - { name: image, label: תמונה, type: image, required: true }
+          - { name: caption, label: תיאור התמונה (חשוב לגוגל), type: string }
+          - name: category
+            label: קטגוריה
+            type: select
+            options: { values: ["חדר הישיבות", "אירועים וארוחות"] }
+
+  - name: settings
+    label: "פרטי קשר"
+    type: file
+    format: json
+    path: content/settings.json
+    fields:
+      - { name: phone, label: טלפון, type: string }
+      - { name: whatsapp, label: "מספר וואטסאפ בפורמט בינלאומי (972...)", type: string }
+      - { name: contact_name, label: שם איש הקשר, type: string }
