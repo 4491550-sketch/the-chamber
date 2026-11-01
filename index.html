@@ -35,7 +35,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px);background:var(--ink)}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--ivory);font-family:var(--sans);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--gold-soft)}
 a:hover{color:var(--ivory)}
 :focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
@@ -397,7 +397,7 @@ input[type="date"],input[type="time"]{color-scheme:dark}
     <div class="arch" aria-hidden="false">
       <span class="arch-key" aria-hidden="true"></span>
       <span class="arch-line" aria-hidden="true"></span>
-      <div class="arch-frame"><img src="images/arch.jpg" alt="חדר הישיבות VIP של הלשכה: שולחן שיש שחור, קירות שיש ונברשת זהב" width="857" height="1200"></div>
+      <div class="arch-frame"><img src="images/arch-pro.jpg" alt="חדר הישיבות VIP של הלשכה: שולחן שיש שחור, קירות שיש ונברשת זהב" width="761" height="1066"></div>
       <p class="arch-caption">סביבה יוקרתית שמכבדת הצלחה ויוצרת יתרון.</p>
     </div>
   </div>
@@ -440,8 +440,8 @@ input[type="date"],input[type="time"]{color-scheme:dark}
       <div class="hero-actions" style="margin-top:40px"><a class="btn btn-gold" href="#contact">לבירור זמינות משרד</a></div>
     </div>
     <div class="office-imgs">
-      <img src="images/render-lounge.jpg" alt="הדמיה: פינת ישיבה בלובי" width="223" height="183">
-      <img src="images/render-corridor.jpg" alt="הדמיה: מסדרון המשרדים" width="226" height="183">
+      <img src="images/office-1-window.jpg" alt="משרד פרטי לעמדה אחת עם חלון" width="1600" height="2400" loading="lazy">
+      <img src="images/office-2-window.jpg" alt="משרד ל-2 עמדות עם מחיצה אקוסטית וחלון" width="1600" height="1066" loading="lazy">
     </div>
   </div>
 </section>
@@ -457,25 +457,25 @@ input[type="date"],input[type="time"]{color-scheme:dark}
         <span class="who">לעצמאים ולעבודה שקטה</span>
         <h3>משרד לעמדה אחת</h3>
         <p>משרד פרטי משלכם, עם דלת שנסגרת ומקום לקבל לקוח.</p>
-        <div class="price" data-price="one"><strong style="font-size:26px">מחיר בפנייה</strong></div>
+        <div class="price" data-price="one"><small>החל מ-</small><strong>5,000 ₪</strong><small>+ מע"מ לחודש</small></div>
         <a class="btn btn-line" href="#contact" data-need="משרד לעמדה אחת">לבירור זמינות</a>
       </article>
       <article class="plan feature">
         <span class="who">לשותפים ולצוות קטן</span>
         <h3>משרד ל-2 עמדות</h3>
         <p>מקום נוח לשניים, עם פרטיות מלאה ונוכחות מכובדת.</p>
-        <div class="price" data-price="two"><strong style="font-size:26px">מחיר בפנייה</strong></div>
+        <div class="price" data-price="two"><small>החל מ-</small><strong>6,000 ₪</strong><small>+ מע"מ לחודש</small></div>
         <a class="btn btn-gold" href="#contact" data-need="משרד ל-2 עמדות">לבירור זמינות</a>
       </article>
       <article class="plan">
         <span class="who">לעסק עם צוות</span>
         <h3>משרד ל-3 עמדות</h3>
         <p>משרד מרווח לשלושה אנשים, מוכן לעבודה מהיום הראשון.</p>
-        <div class="price" data-price="three"><strong style="font-size:26px">מחיר בפנייה</strong></div>
+        <div class="price" data-price="three"><small>החל מ-</small><strong>7,000 ₪</strong><small>+ מע"מ לחודש</small></div>
         <a class="btn btn-line" href="#contact" data-need="משרד ל-3 עמדות">לבירור זמינות</a>
       </article>
     </div>
-    <p class="plans-note">רוצים הצעה מדויקת לצוות שלכם? השאירו פרטים ונחזור עם מחיר מותאם.</p>
+    <p class="plans-note">משרד עם חלון: תוספת <span data-k="p.window">500</span> ₪ לחודש. ארנונה, חשמל, מים, ניקיון, אינטרנט, קפה ושתייה כלולים במחיר.</p>
   </div>
 </section>
 
@@ -505,7 +505,7 @@ input[type="date"],input[type="time"]{color-scheme:dark}
     </div>
     <div class="meeting-grid">
       <div class="meeting-side">
-        <div class="meeting-img"><img src="images/room-wide.jpg" alt="חדר הישיבות VIP: שולחן שיש ארוך ל-20 משתתפים ומסך גדול" width="1400" height="788"></div>
+        <div class="meeting-img"><img src="images/room-pro.jpg" alt="חדר הישיבות VIP: שולחן שיש ארוך ל-20 משתתפים, פינת קפה ומסך גדול" width="1600" height="1066"></div>
         <ul class="specs">
           <li><b>עד <span data-k="m.capacity">20</span></b><span>משתתפים</span></li>
           <li><b>2</b><span>מסכי פלזמה</span></li>
@@ -559,10 +559,10 @@ input[type="date"],input[type="time"]{color-scheme:dark}
   <div class="wrap">
     <div class="sec-head"><h2>מבט מבפנים</h2></div>
     <div class="gallery">
-      <button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות"><img src="images/room-main.jpg" alt="חדר הישיבות VIP" width="1400" height="1050" loading="lazy"></button>
-      <button type="button" data-zoom aria-label="הגדלת תמונה: ערב אירוח"><img src="images/room-event.jpg" alt="חדר הישיבות בהעמדה לארוחה" width="1200" height="1600" loading="lazy"></button>
-      <button type="button" data-zoom aria-label="הגדלת תמונה: פינת הקפה"><img src="images/room-dinner.jpg" alt="פינת הקפה והמיני בר בחדר הישיבות" width="1010" height="1080" loading="lazy"></button>
-      <button type="button" data-zoom aria-label="הגדלת תמונה: החדר מזווית רחבה"><img src="images/room-wide.jpg" alt="חדר הישיבות VIP מזווית רחבה" width="1400" height="788" loading="lazy"></button>
+      <button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות"><img src="images/room-side.jpg" alt="חדר הישיבות VIP" width="1600" height="1066" loading="lazy"></button>
+      <button type="button" data-zoom aria-label="הגדלת תמונה: המסדרון"><img src="images/corridor-tall.jpg" alt="מסדרון המשרדים והמטבח המשותף" width="1600" height="2400" loading="lazy"></button>
+      <button type="button" data-zoom aria-label="הגדלת תמונה: משרד"><img src="images/office-2-glass.jpg" alt="משרד ל-2 עמדות" width="1600" height="1066" loading="lazy"></button>
+      <button type="button" data-zoom aria-label="הגדלת תמונה: המטבח המשותף"><img src="images/corridor-kitchen.jpg" alt="המטבח המשותף ומסדרון המשרדים" width="1600" height="1066" loading="lazy"></button>
     </div>
     <a class="more-link" href="gallery.html">לגלריה המלאה</a>
   </div>
@@ -674,7 +674,7 @@ input[type="date"],input[type="time"]{color-scheme:dark}
     document.querySelectorAll('[data-k="phone"]').forEach(function(el){el.textContent=d.phone;});
     document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(a){a.href='https://wa.me/'+WA;});
     if(d.contact_name)setK('contact_name',d.contact_name);});
-  getJSON('content/prices.json').then(function(d){if(!d)return;
+  getJSON('content/prices.json').then(function(d){if(!d)return; if(d.window_extra)setK('p.window',Number(d.window_extra).toLocaleString('he-IL'));
     [['one',d.office_1],['two',d.office_2],['three',d.office_3]].forEach(function(p){
       var el=document.querySelector('[data-price="'+p[0]+'"]'); if(!el||!p[1])return;
       el.innerHTML='<small>החל מ-</small><strong>'+Number(p[1]).toLocaleString('he-IL')+' ₪</strong><small>'+(d.vat_included?'כולל מע"מ':'+ מע"מ')+' לחודש</small>';});});

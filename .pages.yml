@@ -35,9 +35,10 @@ content:
     format: json
     path: content/prices.json
     fields:
-      - { name: office_1, label: "מחיר החל מ- למשרד לעמדה אחת (ריק = מחיר בפנייה)", type: number }
+      - { name: office_1, label: "מחיר החל מ- למשרד לעמדה אחת", type: number }
       - { name: office_2, label: "מחיר החל מ- למשרד ל-2 עמדות", type: number }
       - { name: office_3, label: "מחיר החל מ- למשרד ל-3 עמדות", type: number }
+      - { name: window_extra, label: "תוספת למשרד עם חלון בש״ח", type: number }
       - { name: vat_included, label: "המחירים כוללים מע״מ", type: boolean }
 
   - name: meeting
@@ -70,7 +71,7 @@ content:
           - name: category
             label: קטגוריה
             type: select
-            options: { values: ["חדר הישיבות", "אירועים וארוחות"] }
+            options: { values: ["משרדים", "חדר הישיבות", "המתחם", "אירועים וארוחות"] }
 
   - name: settings
     label: "פרטי קשר"

@@ -35,7 +35,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px);background:var(--ink)}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--ivory);font-family:var(--sans);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--gold-soft)}
 a:hover{color:var(--ivory)}
 :focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
@@ -378,18 +378,33 @@ input[type="date"],input[type="time"]{color-scheme:dark}
 <section class="block" style="padding-top:56px">
   <div class="wrap">
     <nav class="crumbs" aria-label="מיקום בעמוד"><a href="index.html">דף הבית</a> / <span>גלריה</span></nav>
-    <div class="sec-head"><h1 style="font-size:clamp(44px,5.6vw,76px)">גלריה</h1><p>חדר הישיבות VIP, בישיבה ובהעמדה לאירועים וארוחות. לחצו על תמונה להגדלה.</p></div>
+    <div class="sec-head"><h1 style="font-size:clamp(44px,5.6vw,76px)">גלריה</h1><p>המשרדים, חדר הישיבות VIP והמתחם. לחצו על תמונה להגדלה.</p></div>
     <div class="chips g-filters" role="group" aria-label="סינון תמונות">
       <button type="button" class="chip" data-gfilter="all" aria-pressed="true">הכל</button>
+      <button type="button" class="chip" data-gfilter="offices" aria-pressed="false">המשרדים</button>
       <button type="button" class="chip" data-gfilter="room" aria-pressed="false">חדר הישיבות</button>
+      <button type="button" class="chip" data-gfilter="complex" aria-pressed="false">המתחם</button>
       <button type="button" class="chip" data-gfilter="events" aria-pressed="false">אירועים וארוחות</button>
     </div>
     <div class="masonry">
-      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות VIP: שולחן שיש ל-20 משתתפים"><img src="images/room-main.jpg" alt="חדר הישיבות VIP: שולחן שיש ל-20 משתתפים" width="1400" height="1050" loading="eager"></button><figcaption>חדר הישיבות VIP: שולחן שיש ל-20 משתתפים</figcaption></figure>
-      <figure data-cat="events"><button type="button" data-zoom aria-label="הגדלת תמונה: החדר בהעמדה לארוחת ערב עסקית"><img src="images/room-event.jpg" alt="החדר בהעמדה לארוחת ערב עסקית" width="1200" height="1600" loading="eager"></button><figcaption>החדר בהעמדה לארוחת ערב עסקית</figcaption></figure>
-      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות מזווית רחבה"><img src="images/room-wide.jpg" alt="חדר הישיבות מזווית רחבה" width="1400" height="788" loading="eager"></button><figcaption>חדר הישיבות מזווית רחבה</figcaption></figure>
-      <figure data-cat="events"><button type="button" data-zoom aria-label="הגדלת תמונה: פינת הקפה, המיני בר והשולחן ערוך לאירוח"><img src="images/room-dinner.jpg" alt="פינת הקפה, המיני בר והשולחן ערוך לאירוח" width="1010" height="1080" loading="lazy"></button><figcaption>פינת הקפה, המיני בר והשולחן ערוך לאירוח</figcaption></figure>
-      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: שולחן השיש והנברשת בחדר הישיבות"><img src="images/arch.jpg" alt="שולחן השיש והנברשת בחדר הישיבות" width="857" height="1200" loading="lazy"></button><figcaption>שולחן השיש והנברשת בחדר הישיבות</figcaption></figure>
+      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות VIP: שולחן שיש ל-20 משתתפים ופינת קפה"><img src="images/room-pro.jpg" alt="חדר הישיבות VIP: שולחן שיש ל-20 משתתפים ופינת קפה" width="1600" height="1066" loading="eager"></button><figcaption>חדר הישיבות VIP: שולחן שיש ל-20 משתתפים ופינת קפה</figcaption></figure>
+      <figure data-cat="offices"><button type="button" data-zoom aria-label="הגדלת תמונה: משרד ל-2 עמדות עם חלון"><img src="images/office-2-window.jpg" alt="משרד ל-2 עמדות עם חלון" width="1600" height="1066" loading="eager"></button><figcaption>משרד ל-2 עמדות עם חלון</figcaption></figure>
+      <figure data-cat="complex"><button type="button" data-zoom aria-label="הגדלת תמונה: מסדרון המשרדים והמטבח המשותף"><img src="images/corridor-tall.jpg" alt="מסדרון המשרדים והמטבח המשותף" width="1600" height="2400" loading="eager"></button><figcaption>מסדרון המשרדים והמטבח המשותף</figcaption></figure>
+      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות VIP: שולחן השיש וכורסאות נוספות לאורחים"><img src="images/room-side.jpg" alt="חדר הישיבות VIP: שולחן השיש וכורסאות נוספות לאורחים" width="1600" height="1066" loading="lazy"></button><figcaption>חדר הישיבות VIP: שולחן השיש וכורסאות נוספות לאורחים</figcaption></figure>
+      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות VIP מבט מהכניסה: נברשת זהב, מסך ופינת קפה"><img src="images/room-front.jpg" alt="חדר הישיבות VIP מבט מהכניסה: נברשת זהב, מסך ופינת קפה" width="1600" height="1066" loading="lazy"></button><figcaption>חדר הישיבות VIP מבט מהכניסה: נברשת זהב, מסך ופינת קפה</figcaption></figure>
+      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: פינת הקפה בחדר הישיבות: מכונת אספרסו, מקרר ותה"><img src="images/room-coffee.jpg" alt="פינת הקפה בחדר הישיבות: מכונת אספרסו, מקרר ותה" width="1600" height="1066" loading="lazy"></button><figcaption>פינת הקפה בחדר הישיבות: מכונת אספרסו, מקרר ותה</figcaption></figure>
+      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: הכניסה לחדר הישיבות VIP"><img src="images/room-entry.jpg" alt="הכניסה לחדר הישיבות VIP" width="1600" height="2133" loading="lazy"></button><figcaption>הכניסה לחדר הישיבות VIP</figcaption></figure>
+      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: המטבח הצמוד לחדר הישיבות עם מקרר שתייה"><img src="images/room-kitchen.jpg" alt="המטבח הצמוד לחדר הישיבות עם מקרר שתייה" width="1600" height="1200" loading="lazy"></button><figcaption>המטבח הצמוד לחדר הישיבות עם מקרר שתייה</figcaption></figure>
+      <figure data-cat="offices"><button type="button" data-zoom aria-label="הגדלת תמונה: משרד לעמדה אחת עם חלון"><img src="images/office-1-window.jpg" alt="משרד לעמדה אחת עם חלון" width="1600" height="2400" loading="lazy"></button><figcaption>משרד לעמדה אחת עם חלון</figcaption></figure>
+      <figure data-cat="offices"><button type="button" data-zoom aria-label="הגדלת תמונה: משרד ל-2 עמדות עם קיר זכוכית"><img src="images/office-2-glass.jpg" alt="משרד ל-2 עמדות עם קיר זכוכית" width="1600" height="1066" loading="lazy"></button><figcaption>משרד ל-2 עמדות עם קיר זכוכית</figcaption></figure>
+      <figure data-cat="complex"><button type="button" data-zoom aria-label="הגדלת תמונה: המטבח המשותף"><img src="images/corridor-kitchen.jpg" alt="המטבח המשותף" width="1600" height="1066" loading="lazy"></button><figcaption>המטבח המשותף</figcaption></figure>
+      <figure data-cat="offices"><button type="button" data-zoom aria-label="הגדלת תמונה: משרד לעמדה אחת"><img src="images/office-1.jpg" alt="משרד לעמדה אחת" width="1600" height="2400" loading="lazy"></button><figcaption>משרד לעמדה אחת</figcaption></figure>
+      <figure data-cat="offices"><button type="button" data-zoom aria-label="הגדלת תמונה: משרד ל-2 עמדות עם כניסה בזיהוי פנים"><img src="images/office-2.jpg" alt="משרד ל-2 עמדות עם כניסה בזיהוי פנים" width="1600" height="1066" loading="lazy"></button><figcaption>משרד ל-2 עמדות עם כניסה בזיהוי פנים</figcaption></figure>
+      <figure data-cat="offices"><button type="button" data-zoom aria-label="הגדלת תמונה: חדר עבודה עם עמדות מופרדות"><img src="images/workroom.jpg" alt="חדר עבודה עם עמדות מופרדות" width="1600" height="1066" loading="lazy"></button><figcaption>חדר עבודה עם עמדות מופרדות</figcaption></figure>
+      <figure data-cat="offices"><button type="button" data-zoom aria-label="הגדלת תמונה: משרד ל-2 עמדות"><img src="images/office-2-door.jpg" alt="משרד ל-2 עמדות" width="1600" height="2400" loading="lazy"></button><figcaption>משרד ל-2 עמדות</figcaption></figure>
+      <figure data-cat="events"><button type="button" data-zoom aria-label="הגדלת תמונה: החדר בהעמדה לארוחת ערב עסקית"><img src="images/room-event.jpg" alt="החדר בהעמדה לארוחת ערב עסקית" width="1200" height="1600" loading="lazy"></button><figcaption>החדר בהעמדה לארוחת ערב עסקית</figcaption></figure>
+      <figure data-cat="events"><button type="button" data-zoom aria-label="הגדלת תמונה: פינת הקפה והשולחן ערוך לאירוח"><img src="images/room-dinner.jpg" alt="פינת הקפה והשולחן ערוך לאירוח" width="1010" height="1080" loading="lazy"></button><figcaption>פינת הקפה והשולחן ערוך לאירוח</figcaption></figure>
+      <figure data-cat="room"><button type="button" data-zoom aria-label="הגדלת תמונה: חדר הישיבות מזווית רחבה"><img src="images/room-wide.jpg" alt="חדר הישיבות מזווית רחבה" width="1400" height="788" loading="lazy"></button><figcaption>חדר הישיבות מזווית רחבה</figcaption></figure>
     </div>
     <div class="hero-actions" style="margin-top:48px">
       <a class="btn btn-gold" href="meeting-room.html#book">להזמנת חדר הישיבות</a>
@@ -514,7 +529,7 @@ input[type="date"],input[type="time"]{color-scheme:dark}
     if(!d||!d.photos||!d.photos.length)return;
     mas.innerHTML=d.photos.filter(function(p){return p.image;}).map(function(p){
       var alt=(p.caption||'').replace(/"/g,'&quot;');
-      return '<figure data-cat="'+(p.category==='אירועים וארוחות'?'events':'room')+'"><button type="button" data-zoom aria-label="הגדלת תמונה: '+alt+'"><img src="'+p.image.replace(/^\//,'')+'" alt="'+alt+'" loading="lazy"></button><figcaption>'+(p.caption||'')+'</figcaption></figure>';}).join('');
+      return '<figure data-cat="'+({'אירועים וארוחות':'events','משרדים':'offices','המתחם':'complex'}[p.category]||'room')+'"><button type="button" data-zoom aria-label="הגדלת תמונה: '+alt+'"><img src="'+p.image.replace(/^\//,'')+'" alt="'+alt+'" loading="lazy"></button><figcaption>'+(p.caption||'')+'</figcaption></figure>';}).join('');
     bindZoom();});}
   /* gallery filter */
   var gf=document.querySelectorAll('[data-gfilter]');
