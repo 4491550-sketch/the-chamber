@@ -1,6 +1,7 @@
 {
-  "office_1": "",
-  "office_2": "",
-  "office_3": "",
+  "office_1": 5000,
+  "office_2": 6000,
+  "office_3": 7000,
+  "window_extra": 500,
   "vat_included": false
 }
